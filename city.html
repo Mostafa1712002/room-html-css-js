@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        select:not(:first-of-type) {
+            display: none;
+        }
+        
+        .active {
+            display: inline !important;
+        }
+    </style>
+</head>
+<select>
+    <option selected disabled>اختر الدولة</option>
+    <option>مصر</option>
+    <option>السعودبه</option>
+    <option>فلسطين</option>
+</select>
+<select>
+    <option selected disabled>الان اخترالمدينة</option>
+    <option>الشرقية</option>
+    <option>الدقهليه</option>
+    <option>دمياط</option>
+</select>
+<select>
+    <option selected disabled>الان اخترالمدينة</option>
+    <option>مكة</option>
+    <option>المدبنة</option>
+    <option>حضر موت</option>
+</select>
+<select>
+    <option selected disabled>الان اخترالمدينة</option>
+    <عoption>عكا</option>
+    <option>حلب</option>
+    <option>القدس</option>
+</select>
+
+<body class="j">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $("select").change(function() {
+                var sele = $(this).val();
+                switch (sele) {
+                    case "مصر":
+                        $("select:nth-child(2)").addClass("active").siblings().removeClass("active")
+                        break;
+                    case "السعودبه":
+                        $("select:nth-child(3)").addClass("active").siblings().removeClass("active")
+                        break;
+                    case "فلسطين":
+                        $("select:nth-child(4)").addClass("active").siblings().removeClass("active")
+                        break;
+                }
+
+
+
+            });
+        });
+    </script>
+</body>
+
+</html>

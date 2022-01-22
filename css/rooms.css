@@ -1,0 +1,937 @@
+/* the global rules  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+button,
+i {
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0;
+}
+
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+
+/* the start of header  */
+
+header {
+    background: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 803px;
+}
+
+header .container .head {
+    display: flex;
+    justify-content: center;
+    padding-top: 33px;
+}
+
+header .container .head img {
+    width: 99px;
+    border-radius: 57px;
+}
+
+header .container .head nav {
+    flex: 1;
+    text-transform: capitalize;
+    margin-left: 30%;
+    font-size: 22px;
+}
+
+header .container .head nav ul {
+    display: flex;
+    width: 100%;
+    list-style: none;
+}
+
+header .head nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+header .head nav ul li a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul .active a,
+header nav ul li a:hover {
+    color: #F28A23 !important;
+}
+
+header .container .foot {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9%;
+}
+
+header .container .foot div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .container .foot div p {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    flex: 1;
+}
+
+header .container .foot div hr {
+    background: white;
+    flex: 1;
+    border: 1px solid white;
+}
+
+header .container .foot>h2 {
+    font-weight: inherit;
+    font-size: 37px;
+    margin-top: 33px;
+}
+
+header .container .foot>p {
+    line-height: 1.6;
+    font-size: 23px;
+    margin-top: 29px;
+    text-align: center;
+    width: 50%;
+    margin-top: 33px;
+}
+
+header .container .foot button {
+    background: none;
+    font-size: 26px;
+    border: 1px solid white;
+    padding: 13px;
+    color: white;
+    border-radius: 2px;
+    margin-top: 81px;
+    text-transform: capitalize;
+}
+
+
+/* the start of about  */
+
+#about {
+    height: 333px;
+    margin-top: 166px;
+}
+
+#about>h2 {
+    text-align: center;
+    text-transform: capitalize;
+    color: #D6D3CF;
+}
+
+#about>h2 span {
+    color: #F28A23;
+}
+
+#about .container {
+    display: flex;
+}
+
+#about .under {
+    width: 228px;
+    height: 3px;
+    background: #D6D3CF;
+    position: relative;
+    margin-top: 19px;
+    margin-bottom: 20px;
+    left: 43%;
+}
+
+#about .under span {
+    background-color: #F28A23;
+    height: 3px;
+    left: 37%;
+    width: 55px;
+    position: absolute;
+}
+
+#about .container>div {
+    margin-top: 22px;
+    flex: 1;
+}
+
+#about .container>div h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #B8B8AF;
+}
+
+#about .container>div>p {
+    margin-top: 26px;
+}
+
+#about .container>div .item1>div,
+#about .container>div .item3>div,
+#about .container>div .item5>div {
+    margin-top: 22px;
+    background-color: #B8B8AF;
+    display: flex;
+    color: #3a342d;
+}
+
+#about .container>div .item1 p,
+#about .container>div .item3 p,
+#about .container>div .item5 p {
+    flex: 26;
+    margin: 5px 0px 10px 18px;
+}
+
+#about .container>div .item1 i,
+#about .container>div .item3 i,
+#about .container>div .item5 i {
+    cursor: pointer;
+    color: white;
+    flex: 1.5;
+    background: #9D9C98;
+    text-align: center;
+    font-size: 27px;
+}
+
+#about .container>div .item2,
+#about .container>div .item4,
+#about .container>div .item6 {
+    display: none;
+    margin-top: 22px;
+    transition: 1s;
+}
+
+#about .container>div .item2 img,
+#about .container>div .item4 img,
+#about .container>div .item6 img {
+    width: 20%;
+    float: left;
+}
+
+#service {
+    margin-top: 284px;
+}
+
+#service .container {
+    margin-top: 150px;
+}
+
+#service>h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 49px;
+}
+
+#service>h2 span {
+    color: #F28A23;
+}
+
+#service .under {
+    width: 228px;
+    height: 3px;
+    background: #D6D3CF;
+    position: relative;
+    margin-top: 19px;
+    margin-bottom: 20px;
+    left: 43%;
+}
+
+#service .under span {
+    background-color: #F28A23;
+    height: 3px;
+    left: 37%;
+    width: 55px;
+    position: absolute;
+}
+
+#service .container {
+    display: flex;
+}
+
+#service .container>div {
+    border: 1px #575757 solid;
+    border-radius: 50%;
+    text-align: center;
+    width: 25%;
+    border-top: 0;
+    flex: 1;
+    margin-right: 35px;
+    color: #575757;
+    padding: 3%;
+}
+
+#service .container>div i {
+    border: 1px #575757 solid;
+    padding: 14px;
+    cursor: pointer;
+    font-size: 27px;
+    color: #575757;
+    bottom: 67px;
+    position: relative;
+    border-radius: 50%;
+}
+
+#service .container>div i:hover {
+    background-color: #F28A23;
+    color: white;
+    border: 1px solid;
+}
+
+#service .container>div p {
+    margin-top: 31px;
+}
+
+#service .container>div h3 {
+    text-align: center;
+    font-size: 33px;
+    margin-top: -53px;
+}
+
+#service .container>div span {
+    margin: 15px 0 0 0;
+    font-size: 22px;
+    display: block;
+}
+
+
+/* end of our service */
+
+
+/* start of blog */
+
+#blog {
+    margin-top: 100px;
+    position: relative;
+}
+
+#blog .container {
+    margin-top: 150px;
+    display: flex;
+    margin-top: 66px;
+}
+
+#blog>h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 49px;
+}
+
+#blog>h2 span {
+    color: #F28A23;
+}
+
+#blog .under {
+    width: 228px;
+    height: 3px;
+    background: #D6D3CF;
+    position: relative;
+    margin-top: 19px;
+    margin-bottom: 20px;
+    left: 43%;
+}
+
+#blog .under span {
+    background-color: #F28A23;
+    height: 3px;
+    left: 37%;
+    width: 55px;
+    position: absolute;
+}
+
+#blog .container>div {
+    position: relative;
+    flex: 1;
+    width: 25%;
+    margin-right: 29px;
+    height: 200px;
+}
+
+#blog .container>div .overflow {
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+    height: 60%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: 3;
+    opacity: .7;
+    top: 30%;
+    display: none;
+}
+
+#blog .container>div .overflow>i {
+    margin: 8px;
+    color: white;
+}
+
+#blog .container>div .overflow>h3 {
+    text-transform: capitalize;
+}
+
+#blog .container>div>i,
+#blog .container>div>img {
+    position: absolute;
+}
+
+#blog .container>div img {
+    width: 100%;
+    z-index: 2;
+}
+
+#blog .container>div>i {
+    cursor: pointer;
+    background: #F28A23;
+    padding: 7px;
+    color: white;
+    font-size: 26px;
+    top: 140px;
+    left: 42%;
+    z-index: 33;
+}
+
+#blog .list {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    ;
+}
+
+#blog .list ul {
+    list-style: none;
+    display: flex;
+}
+
+#blog .list ul li {
+    flex: 1;
+    cursor: pointer;
+    border: 1px solid #F28A23;
+    border-radius: 50%;
+    padding: 3px;
+    margin-right: 10px;
+}
+
+#blog .list ul .active,
+#blog .list ul li:hover {
+    background: #F28A23;
+}
+
+#blog>button {
+    background: none;
+    font-size: 26px;
+    border: 1px solid #cf6700;
+    padding: 13px;
+    color: #fb7d01;
+    top: 117%;
+    position: absolute;
+    left: 43%;
+    border-radius: 3px;
+}
+
+
+/* end of blog */
+
+
+/* start of our team */
+
+#team {
+    margin-top: 260px;
+    background: #F28A23;
+    padding: 33px 0 128px 0;
+    z-index: 33;
+}
+
+#team .container {
+    color: white;
+    display: flex;
+}
+
+#team .container .item {
+    margin-left: 8px;
+    flex: 1;
+    display: flex;
+}
+
+#team .container .item>div {
+    margin-left: 8px;
+    flex: 1;
+}
+
+#team .container .item>div img {
+    border-style: none;
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+}
+
+#team .container .item>div .icons {
+    display: flex;
+    justify-content: center;
+    margin: 12px 8px 0px 13px;
+}
+
+#team .container .item>div .icons i {
+    flex: 1;
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+#team .container .item>div>h3 {
+    font-size: 21px;
+    text-transform: capitalize;
+}
+
+#team .container .item>div>p:first-of-type {
+    margin: 6px 0 18px 0;
+}
+
+#team .container .item>ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#team .container .item>ul li {
+    padding: 1px;
+    flex: 1;
+    margin-top: 7px;
+    background: white;
+    border-radius: 100%;
+    border: 1px white;
+    margin-right: 60px;
+}
+
+#team>h2 {
+    text-align: center;
+    font-size: 33px;
+    color: white;
+}
+
+#team>h2 span {
+    color: #F28A23;
+}
+
+#team .under {
+    width: 228px;
+    height: 2px;
+    background: #D6D3CF;
+    position: relative;
+    margin-top: 19px;
+    margin-bottom: 90px;
+    left: 43%;
+}
+
+#team .under span {
+    background-color: #3a342d;
+    height: 2px;
+    left: 37%;
+    width: 55px;
+    position: absolute;
+}
+
+#team .list {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    ;
+}
+
+#team .list ul {
+    list-style: none;
+    display: flex;
+    margin-top: 54px;
+}
+
+#team .list ul li {
+    flex: 1;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 3px;
+    margin-right: 10px;
+}
+
+#team .list ul .active,
+#team .list ul li:hover {
+    background: white;
+}
+
+#team>button {
+    background: none;
+    font-size: 26px;
+    border: 1px solid white;
+    padding: 13px;
+    margin-top: 44px;
+    color: white;
+    /* top: -4%; */
+    position: absolute;
+    left: 43%;
+    border-radius: 3px;
+}
+
+
+/* end of our team */
+
+
+/* start of testminonieies */
+
+#testmoniais {
+    height: 333px;
+    color: #575757;
+    margin-top: 100px;
+}
+
+#testmoniais h2 {
+    text-align: center;
+}
+
+#testmoniais>h2 span {
+    color: #F28A23;
+}
+
+#testmoniais .under {
+    width: 228px;
+    height: 3px;
+    background: #D6D3CF;
+    position: relative;
+    margin-top: 19px;
+    margin-bottom: 20px;
+    left: 43%;
+}
+
+#testmoniais .under span {
+    background-color: #F28A23;
+    height: 3px;
+    left: 37%;
+    width: 55px;
+    position: absolute;
+}
+
+#testmoniais .container>div {
+    position: relative;
+    flex: 1;
+    width: 25%;
+    margin-right: 29px;
+    height: 200px;
+}
+
+#testmoniais .container div:first-of-type {
+    margin-bottom: -113px;
+    display: flex;
+    width: 100%;
+}
+
+#testmoniais .container div:first-of-type hr {
+    margin: 20px 7px 8px 0px;
+    flex: 8;
+}
+
+#testmoniais .container div:first-of-type>div {
+    flex: 2;
+}
+
+#testmoniais .container>div:first-of-type>div i {
+    padding: 1px 10px 9px 6px;
+    height: 12%;
+    margin-right: 10px;
+    color: white;
+    font-size: 32px;
+    background: #fb7d01;
+}
+
+#testmoniais .container>div:last-of-type {
+    display: flex;
+    width: 100%;
+}
+
+#testmoniais .container>div:last-of-type img {
+    border-radius: 50%;
+    width: 17%;
+}
+
+#testmoniais .container>div:last-of-type q {
+    line-height: 1.5;
+    font-size: 19px;
+}
+
+#testmoniais .container>div:last-of-type hr {
+    background: #575757;
+    margin: 0 11px 0 0;
+    height: 92%;
+}
+
+#testmoniais .container>div:last-of-type div {
+    width: 33.33333333%;
+    display: flex;
+    flex-direction: column;
+}
+
+#testmoniais .container>div:last-of-type div p {
+    margin-top: 13px;
+}
+
+
+/* end of testminonieies */
+
+
+/* start of footer  */
+
+footer {
+    margin-top: 64px;
+    height: 879px;
+    background: url(../images/foot.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+footer .overflow {
+    position: absolute;
+    background-color: #0e0e0e;
+    height: 879px;
+    opacity: .8;
+    width: 100%;
+}
+
+footer .overflow h2 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    margin-top: 15px;
+}
+
+footer .overflow .under {
+    width: 228px;
+    height: 3px;
+    background: #D6D3CF;
+    position: relative;
+    margin-top: 19px;
+    margin-bottom: 20px;
+    left: 43%;
+}
+
+footer .overflow .under span {
+    background-color: #F28A23;
+    height: 3px;
+    left: 37%;
+    width: 55px;
+    position: absolute;
+}
+
+footer .overflow>div .item {
+    margin: 66px 0px 0px 204px;
+    line-height: 2;
+    margin-bottom: 55px;
+    display: flex;
+    color: white;
+}
+
+footer .overflow>div .item>div {
+    flex: 1;
+}
+
+footer .overflow>div .item i {
+    border: 3px solid white;
+    font-size: 74px;
+    padding: 32px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+footer .overflow>div .item h3 {
+    font-size: 42px;
+}
+
+footer .overflow>div .item p {
+    text-align: justify;
+}
+
+footer .overflow>div form {
+    display: flex;
+    padding: 0 40px 0px 40px;
+}
+
+footer .overflow>div form input {
+    border-radius: 5px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    font-size: 31px;
+}
+
+footer .overflow>div form div {
+    display: flex;
+    flex: 1;
+}
+
+footer .overflow>div form div:first-of-type {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .overflow>div form div:first-of-type input {
+    overflow: visible;
+    padding: 8px;
+    flex: 1;
+    margin: 0 0 29px 0;
+}
+
+footer .overflow>div form div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 40px;
+}
+
+footer .overflow>div form div:last-of-type textarea {
+    overflow: auto;
+    height: 193px;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    font-size: 31px;
+}
+
+footer .overflow>div form div:last-of-type input {
+    background: #cf6700;
+    color: white;
+    border: 0;
+    padding: 13px;
+    font-size: 21px;
+    width: 31%;
+    margin: 25px 0 0 371px;
+}
+
+footer .overflow .foot {
+    display: flex;
+    margin-top: 66px;
+    color: white;
+}
+
+footer .overflow .foot>div {
+    flex: 1;
+}
+
+footer .overflow .foot div:first-of-type img {
+    width: 73px;
+    border-radius: 50%;
+    margin-top: -25px;
+    margin-left: 55px;
+}
+
+footer .overflow .foot div:last-of-type {
+    display: flex;
+}
+
+footer .overflow .foot div:last-of-type {
+    margin-left: 57%;
+    display: flex;
+}
+
+footer .overflow .foot div:last-of-type h3 {
+    margin-right: -200px;
+}
+
+footer .overflow .foot div:last-of-type i {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.last {
+    margin-top: 333px;
+}
+
+
+/* end of footer  */
+
+
+/* my frame work  */
+
+.underline::after {
+    content: "";
+    position: absolute;
+    width: 77px;
+    border-bottom: 3px solid white;
+    left: 43%;
+    top: 15%;
+}
+
+.change {
+    background-color: #575757 !important;
+    color: white !important;
+    transition: 1s;
+}
+
+.scale {
+    background-color: #F28A23 !important;
+    transition: ease-in-out !important;
+    color: white !important;
+}
+
+.scale {
+    transform: rotate(90deg);
+    position: relative;
+}
+
+.clear {
+    clear: both;
+}
+
+.blogslide {
+    top: 12% !important;
+    transition: all 1s ease-out;
+}
+
+.navfake {
+    background: #c4b8ac;
+    opacity: .8;
+    color: #0d0b0b !important;
+    position: fixed;
+    height: 81px;
+    top: 0;
+    left: 0;
+    margin: 0 !important;
+    width: 100%;
+    z-index: 999;
+    padding-top: 23px;
+}
+
+header .first {
+    font-size: 31px;
+    color: #ada194c7;
+    right: 2px;
+    position: fixed;
+    top: 87%;
+    display: none !important;
+    z-index: 999;
+    cursor: pointer;
+}
+
+header .second {
+    position: relative;
+    left: 48%;
+    color: white;
+    bottom: -36px;
+    font-size: 47px;
+}
